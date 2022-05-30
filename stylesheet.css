@@ -1,0 +1,421 @@
+.imglrg {
+    width:100%;
+    opacity:25%;
+    position:relative;
+}
+.blkgnd {
+    background-color:black;
+}
+body {
+    margin:0px;
+    background-color:whitesmoke;
+}
+h1 {
+    font-size:100px;
+    color:#ff4242;
+    font-family:Helvetica;
+    text-align:center;
+}
+.overimage {
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.topnav {
+    background-color:#121111;
+    padding-top:25px;
+    padding-bottom:25px;
+    border:5px solid #121111;  
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+}
+@keyframes activeHover {
+    from {background-color:#b00000;color:whitesmoke;}
+    to {background-color:#e10000;color:white;}
+}
+@keyframes activeDehover {
+    from {background-color:#e10000;color:white;}
+    to {background-color:#b00000;color:whitesmoke}
+}
+@keyframes notactiveHover {
+    from {background-color:lightgrey;color:#e10000;}
+    to {background-color:#e10000;color:white;}
+}
+@keyframes notactiveDehover {
+    from {background-color:#e10000;color:white;}
+    to {background-color:lightgrey;color:#e10000;}
+}
+.active {
+    margin-left:10px;
+    margin-right:10px;
+    padding:25px;
+    font-size:20px;
+    font-family:Helvetica;
+    text-decoration:none;
+    background-color:#b00000;
+    color:whitesmoke;
+    animation-name:activeDehover;
+    animation-duration:0.5s;
+}
+.notactive {
+    margin-left:10px;
+    margin-right:10px;
+    padding:25px;
+    background-color:lightgrey;
+    font-size:20px;
+    font-family:Helvetica;
+    color:#e10000;
+    text-decoration:none;
+    animation-name:notactiveDehover;
+    animation-duration:0.5s;
+}
+a:hover.notactive {
+    background-color:#e10000;
+    color:white;
+    animation-name:notactiveHover;
+    animation-duration:0.5s;
+}
+a:hover.active {
+    animation-name:activeHover;
+    animation-duration:0.5s;
+    color:white;
+    background-color:#e10000;
+}
+h2 {
+    font-family:helvetica;
+    font-size:75px;
+    text-align:center;
+}
+.textsection {
+    margin:25px;
+    padding:25px;
+    background-color:lightgrey;
+}
+h3 {
+    font-family:Arial;
+    font-size:40px;
+    margin:0px;
+    color:#b00000;
+    font-style:italic;
+}
+p {
+    margin-bottom:0px;
+    font-family:arial;
+    color:#1c1c1c;
+}
+ul {
+    margin-bottom:0px;
+    font-family:arial;
+    color:#1c1c1c;
+    list-style-image:url(images/nail.png);
+}
+.logosml {
+    height:40px;
+    width:auto;
+    padding-right:10px;
+    float:left
+}
+@keyframes textLinkHover {
+    from {color:#e10000;text-decoration:lightgrey underline;}
+    to {color:#ff4242;text-decoration:#ff4242 underline;}
+}
+@keyframes textLinkDehover {
+    to {color:#e10000;text-decoration:lightgrey underline;}
+    from {color:#ff4242;text-decoration:#ff4242 underline;}
+}
+a.textlink {
+    color:#e10000;
+    text-decoration:none;
+    animation-name:textLinkDehover;
+    animation-duration:0.5s;
+}
+a:hover.textlink {
+    color:#ff4242;
+    text-decoration:underline;
+    animation-name:textLinkHover;
+    animation-duration:0.5s;
+}
+.pageimg {
+    height:200px;
+    width:auto;   
+    padding:5px;
+    border:5px solid #b00000;
+    border-radius:50px;
+    display:inline-block;
+    margin-left:25px;
+}
+label {
+    font-family:arial;
+    color:#1c1c1c;
+}
+.nltitle {
+    font-size:20px;
+    font-style:bold;
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:5px;
+    color:#e10000;
+}
+.nldiv {
+    float:right;
+    margin:20px;
+    border:3px solid black;
+    border-radius:3px;
+    padding:10px;
+    background-color:lightgrey;
+    position:sticky;
+    position:-webkit-sticky;
+    top:1px;
+}
+#nlemail {
+    height:20px;
+}
+.nllabel {
+    color:#1c1c1c;
+    font-size: 20px;
+}
+.nlsubmit {
+    border:2px solid gray;
+    background-color:darkgray;
+    color:black;
+    border-radius:2px;
+    font-size:10px;
+    animation-name:nlDehover;
+    animation-duration:0.5s;
+    margin-left:5px;
+    height:20px
+}
+@keyframes nlHover {
+    from {border:2px solid gray;background-color:darkgray;color:black;}
+    to {border:2px solid #6d0000;background-color:#b00000;color:white;}
+}
+@keyframes nlDehover {
+    to {border:2px solid gray;background-color:darkgray;color:black;}
+    from {border:2px solid #6d0000;background-color:#b00000;color:white;}
+}
+input:hover.nlsubmit {
+    border:2px solid #6d0000;
+    background-color:#b00000;
+    color:white;
+    animation-name:nlHover;
+    animation-duration:0.5s;
+}
+th.st {
+    border:2px solid grey;
+    font-size:20px;
+    color:#b00000;
+    padding:5px;
+    width:10%;
+    font-family:arial;
+}
+td.st {
+    border:1px solid darkgrey;
+    font-size:20px;
+    padding:5px;
+    width:10%;
+    font-family:arial;
+    color:#1c1c1c;
+}
+table.st {
+    margin:30px;
+    text-align:center;
+}
+.small {
+    font-size:13px;
+    color:grey;
+}
+.invisth {
+    border:0px;
+}
+.fullimg {
+    height:auto;
+    width:80%;   
+    padding:5px;
+    border:5px solid #b00000;
+    border-radius:50px;
+    display:inline-block;
+    margin-left:25px;
+}
+.centre {
+    text-align:center;
+}
+::-webkit-scrollbar {
+    width:15px;
+}
+::-webkit-scrollbar-track {
+    box-shadow:inset 0 0 5px #121111;
+    background-color:#1c1c1c;
+}
+::-webkit-scrollbar-thumb {
+    background:#6d0000; 
+    border-radius:5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:#b00000; 
+}
+.signupform {
+    padding:20px;
+    margin-left:15%;
+    background-color:lightgrey;
+    width:70%;
+    margin-bottom:5%;
+}
+.required {
+    color:#424242;
+    font-style:italic;
+    margin:0px
+}
+label {
+    color:black;
+    font-size:20px;
+}
+.mainform {
+    font-size:15px;
+    width:100%
+}
+td {
+    padding:10px;
+    width:33%
+}
+.radiolabel {
+    font-size:15px;
+    font-style:italic;
+    color:#1c1c1c;
+}
+@keyframes formButtonHover {
+    from {background-color:#ff4242;color:#1c1c1c;}
+    to {background-color:#b00000;color:lightgrey;}
+}
+@keyframes formButtonDehover {
+    to {background-color:#ff4242;color:#1c1c1c;}
+    from {background-color:#b00000;color:lightgrey;}
+}
+.formbutton {
+    width:10%;
+    margin-left:45%;
+    color:#1c1c1c;
+    border:2px solid #121111;
+    border-radius:4px;
+    padding:10px;
+    font-size:17px;
+    background-color:#ff4242;
+    font-weight:bolder;
+    animation-name:formButtonDehover;
+    animation-duration:0.5s
+}
+input:hover.formbutton {
+    width:10%;
+    margin-left:45%;
+    color:lightgrey;
+    border:2px solid #121111;
+    border-radius:4px;
+    padding:10px;
+    font-size:17px;
+    background-color:#b00000;
+    font-weight:bolder;
+    animation-name:formButtonHover;
+    animation-duration:0.5s
+}
+.mainiframe {
+    width:80%;      
+    height:500px;
+    margin-left:10%;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:0px;
+    border:5px solid #b00000;
+    border-radius:10px;
+}
+.galleryiframe {
+    width:100%;
+    height:400px;
+    margin-top:30px;
+    border-radius:10px;
+}
+.gallerybody {
+    background-color:#424242;
+    margin:0px;
+}
+.galleryflex {
+    display:flex;
+    height:383px;
+    width:fit-content;
+}
+.flexsection {
+    margin:10px;
+    border:5px solid #6d0000;
+    border-radius:10px;
+}
+.galleryimg {
+    height:100%;
+    border-radius:5px;
+}
+.gallerycaption {
+    position:absolute;
+    background-color:#6d0000;
+    color:whitesmoke;
+    top:5px;
+    padding:5px;
+    border-radius:5px;
+    font-family:Helvetica;
+    font-style:italic;
+    margin-left:1%;
+    white-space:nowrap;
+    font-size:16px;
+}
+.backtotop {
+    width:25%;
+}
+.home {
+    bottom:5px;
+    left:5px;
+    width:25%;
+}
+.footerbuttonl {
+    width:20%;
+    float:left;
+    padding:10px;
+}
+.footerbuttonr {
+    width:20%;
+    float:right;
+    padding:10px;
+}
+.pagefooter {
+    display:flex;
+    height:5%;
+    background-color:grey;
+    margin-top:10px;
+    border-top:5px solid  #424242
+}
+.copyright {
+    width:50%;
+}
+.crtext {
+    text-align:center;
+    color:#1c1c1c;
+    font-size: 15px;
+    padding-top:3%
+}
+@keyframes tbLinkHover {
+    from {color:#b00000;text-decoration:grey underline;}
+    to {color:#e10000;text-decoration:#e10000 underline;}
+}
+@keyframes tbLinkDehover {
+    to {color:#b00000;text-decoration:grey underline;}
+    from {color:#e10000;text-decoration:#e10000 underline;}
+}
+a.tblink {
+    color:#b00000;
+    text-decoration:none;
+    animation-name:tbLinkDehover;
+    animation-duration:0.5s;
+}
+a:hover.tblink {
+    color:#e10000;
+    text-decoration:underline;
+    animation-name:tbLinkHover;
+    animation-duration:0.5s;
+}

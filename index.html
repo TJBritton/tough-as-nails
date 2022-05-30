@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tough as Nails</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<script src="javascript.js"></script>
+<body>
+    <div id="pagetop"></div>
+    <div class="blkgnd">
+        <img src="images/dumbells.png" alt="Dumbells" class="imglrg">
+        <div class="overimage">
+            <h1>Tough as Nails</h1>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="index.html" class="active" title="Homepage">Home</a>
+        <a href="contact.html" class="notactive" title="Contact">Contact</a>
+        <a href="location.html" class="notactive" title="Location">Location</a>
+        <a href="signup.html" class="notactive" title="Sign Up">Sign Up</a>
+        <a href="links.html" class="notactive" title="Links">Links</a>
+    </div>
+    <div class="nldiv">
+        <form onsubmit="nlClicked()">
+            <p class="nltitle"><b>Sign Up for our Newsletter</b></p>
+            <label for="nlemail" class="nllabel">Email:</label>
+            <input type="email" id="nlemail" placeholder="Email address" required oninput="emailCheck(this)">
+            <input type="submit" class="nlsubmit" value="Submit">
+        </form>
+    </div>
+    <h2>Welcome to our Gym</h2>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>What we do</h3>
+        <p>We are a gym - so you come here and train. Make gains, work hard, stay dedicated, and you'll fit right in with the rest of our members.</p> 
+    </div>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>Where we are</h3>
+        <p>We are based in 17 Chill Circuit, Yatala, Gold Coast. Click <a href="location.html" class="textlink" title="Location page">here</a> for more information.</p>
+    </div>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>Why you should come</h3>
+        <iframe class="galleryiframe" src="gallery.html" title="Gallery"></iframe>
+    </div>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>Opening times</h3>
+        <p>We are open from 6:00am to 10:00pm on the weekdays, and 4:00am to 10:00pm on the weekends. However, verified gym instructors can come to our gym at any time and train, as long as they bring someone else to work with.</p>
+    </div>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>Pricing and plans</h3>
+        <p>We have multiple plans available for all people of different shapes and sizes. You can purchase a plan <a class="textlink" href="signup.html" title="Sign up page">here</a>.</p>
+        <ul>
+            <li>Self Paced Plan - $50/mo</li>
+            <li>Instructed Plan - $100/mo</li>
+            <li>High-Intensity Course - $150/mo</li>
+            <li>Ivor Badback Personal Training - $250/mo</li>
+        </ul>
+    </div>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>About the owner</h3>
+        <p>Ivor Badback has been going to the gym since he was 3. He wanted to dedicate his life to physical work, and spent the last 10 years of life as a construction worker. However, he slipped a disc while lifting a Bobcat out of a ditch. Now, after realising his potential, he created his own gym and started to bless others with the sheer muscle he has now.</p>
+    </div>
+    <div class="centre">
+        <img alt="Ivor Badback" src="images/ivorbadback.jpg" class="pageimg">
+        <img alt="Ivor Badback" src="images/ivorbadback stretch.png" class="pageimg">
+    </div>
+    <div class="pagefooter">
+        <div class="home">
+            <a href="index.html"><img class="footerbuttonl" src="images/home.png" alt="Homepage"></a>
+        </div>
+        <div class="copyright">
+            <p class="crtext">© Tough as Nails, 2022. Website created by <a href="https://github.com/TJBritton" target="_blank" class="tblink" title="TB's Github page">Tristan Britton.</p>
+        </div>
+        <div class="backtotop">
+            <a href="#pagetop"><img class="footerbuttonr" src="images/up.png" alt="Back to top"></a>
+        </div>
+    </div>
+</body>
+</html>
